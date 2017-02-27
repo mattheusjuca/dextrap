@@ -1,9 +1,18 @@
 .navbar {
-	
+	position: relative;
+	width: 100%;
+	background-color: yellow;
+	text-align: center;
 }
 
 .sandwich-navbar {
 	.button {
 		
+	}
+}
+
+@media screen and (min-width: $screen-tablet) {
+	.navbar > .nav {
+		float: right;
 	}
 }
