@@ -1,0 +1,16 @@
+.nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+
+	li {
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: $screen-tablet) {
+	.nav {
+		float: right;
+	}
+}

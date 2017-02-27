@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";AAAA;;;;EAIE;ACJF,CAAE;EACA,UAAU,EAAE,UAAU;;AAGxB,IAAK;EACJ,WAAW,ECLC,2DAA2D;;ADQxE,IAAK;EACJ,MAAM,EAAE,CAAC",
-"sources": ["dextrap.scss","dextrap/_reset.scss","dextrap/_variables.scss"],
+"mappings": ";AAAA;;;;EAIE;ACJF,CAAE;EACA,UAAU,EAAE,UAAU;;AAGxB,IAAK;EACJ,WAAW,ECLC,2DAA2D;EDMvE,oBAAoB,EAAE,IAAI;EACzB,wBAAwB,EAAE,IAAI;;AAGhC,IAAK;EACJ,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,IAAI;;AAGb;;;;;;;OAOQ;EACP,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,CAAC;;AExBV,MAAO;EACN,KAAK,EAAE,IAAI;;ACDZ,IAAK;EACJ,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,QAAQ,EAAE,MAAM;EAEhB,OAAG;IACF,OAAO,EAAE,YAAY;;AAIvB,oCAA8C;EAC7C,IAAK;IACJ,KAAK,EAAE,KAAK",
+"sources": ["dextrap.scss","dextrap/_reset.scss","dextrap/_variables.scss","dextrap/_footer.scss","dextrap/_nav.scss"],
 "names": [],
 "file": "dextrap.css"
 }

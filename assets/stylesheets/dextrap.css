@@ -8,9 +8,38 @@
   box-sizing: border-box; }
 
 html {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 
 body {
+  margin: 0;
+  height: 100%; }
+
+article,
+aside,
+details,
+footer,
+header,
+nav,
+section,
+summary {
+  display: block;
   margin: 0; }
+
+footer {
+  clear: both; }
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
+  .nav li {
+    display: inline-block; }
+
+@media screen and (min-width: 635px) {
+  .nav {
+    float: right; } }
 
 /*# sourceMappingURL=dextrap.css.map */
