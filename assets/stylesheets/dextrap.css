@@ -51,8 +51,19 @@ footer {
   background-color: yellow;
   text-align: center; }
 
+.navbar-brand {
+  background-color: red; }
+
 @media screen and (min-width: 635px) {
   .navbar > .nav {
-    float: right; } }
+    float: right; }
+
+  .navbar-brand {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    margin: auto; } }
 
 /*# sourceMappingURL=dextrap.css.map */

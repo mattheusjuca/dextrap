@@ -5,6 +5,10 @@
 	text-align: center;
 }
 
+.navbar-brand {
+	background-color: red;
+}
+
 .sandwich-navbar {
 	.button {
 		
@@ -14,5 +18,16 @@
 @media screen and (min-width: $screen-tablet) {
 	.navbar > .nav {
 		float: right;
+	}
+
+	
+	// Does not work in IE7
+	.navbar-brand {
+		position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	height: 30%;
+  	margin: auto;
 	}
 }
