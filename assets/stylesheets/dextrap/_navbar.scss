@@ -1,12 +1,17 @@
 .navbar {
 	position: relative;
 	width: 100%;
-	background-color: yellow;
+	height: 100%;
 	text-align: center;
+	background-color: yellow;
 }
 
 .navbar-brand {
 	background-color: red;
+
+	> img {
+			vertical-align: middle;
+	}
 }
 
 .sandwich-navbar {
@@ -16,18 +21,23 @@
 }
 
 @media screen and (min-width: $screen-tablet) {
-	.navbar > .nav {
-		float: right;
-	}
+	.navbar {
+		display: table;
 
-	
-	// Does not work in IE7
+		> .nav {
+			float: right;
+			height: 100%;
+			display: table;
+			
+			> li {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+  }
+
 	.navbar-brand {
-		position: absolute;
-  	top: 0;
-  	bottom: 0;
-  	left: 0;
-  	height: 30%;
-  	margin: auto;
+		display: table-cell;
+		vertical-align: middle;
 	}
 }
