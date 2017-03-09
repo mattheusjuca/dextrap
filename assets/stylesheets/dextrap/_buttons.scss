@@ -1,0 +1,10 @@
+.btn-sandwich {
+	float: right;
+}
+
+@media screen and (min-width: $screen-tablet) {
+	.btn-sandwich {
+		visibility: hidden;
+    display: none;
+	}
+}
