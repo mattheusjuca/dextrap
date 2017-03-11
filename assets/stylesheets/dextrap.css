@@ -97,9 +97,9 @@ footer {
     vertical-align: middle; }
 
 @media screen and (max-width: 635px) {
-  .sandwich-navbar > .nav {
+  .navbar-sandwich > .nav {
     width: 100%; }
-    .sandwich-navbar > .nav > li {
+    .navbar-sandwich > .nav > li {
       display: block; } }
 @media screen and (min-width: 635px) {
   .navbar {
