@@ -28,6 +28,39 @@ summary {
   overflow: auto;
   margin: 0; }
 
+button {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button {
+  text-transform: none; }
+
+button,
+html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
 footer {
   clear: both;
   text-align: center; }
@@ -54,6 +87,10 @@ footer {
   text-align: center;
   background-color: yellow; }
 
+.navbar-header {
+  background-color: green;
+  display: inline-block; }
+
 .navbar-brand {
   background-color: red; }
   .navbar-brand > img {
@@ -66,18 +103,13 @@ footer {
       display: block; } }
 @media screen and (min-width: 635px) {
   .navbar {
-    display: table; }
-    .navbar > .nav {
-      float: right;
-      height: 100%;
-      display: table; }
-      .navbar > .nav li {
-        display: table-cell;
-        vertical-align: middle; }
-
-  .navbar-brand {
-    display: table-cell;
-    vertical-align: middle; } }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: -webkit-flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center; } }
 .btn-sandwich {
   float: right; }
 

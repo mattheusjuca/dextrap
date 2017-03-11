@@ -6,11 +6,16 @@
 	background-color: yellow;
 }
 
+.navbar-header {
+	background-color: green;
+	display: inline-block;
+}
+
 .navbar-brand {
 	background-color: red;
 
 	> img {
-			vertical-align: middle;
+		vertical-align: middle;
 	}
 }
 
@@ -27,22 +32,13 @@
 
 @media screen and (min-width: $screen-tablet) {
 	.navbar {
-		display: table;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-		> .nav {
-			float: right;
-			height: 100%;
-			display: table;
-
-			li {
-				display: table-cell;
-				vertical-align: middle;
-			}
-		}
+		display: -webkit-flex;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		-webkit-box-align: center;
   }
-
-	.navbar-brand {
-		display: table-cell;
-		vertical-align: middle;
-	}
 }
