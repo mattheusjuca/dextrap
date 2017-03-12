@@ -1,5 +1,8 @@
-.btn-sandwich {
-	float: right;
+.btn-sandwich-row {
+	width: $btn-sandwich-width;
+  height: $btn-sandwich-row-height;
+  background-color: black;
+  margin: $btn-snadwich-row-margin;
 }
 
 @media screen and (min-width: $screen-tablet) {

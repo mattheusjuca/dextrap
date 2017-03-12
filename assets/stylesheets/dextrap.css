@@ -124,8 +124,11 @@ footer {
 
   .navbar-header {
     display: inline-block; } }
-.btn-sandwich {
-  float: right; }
+.btn-sandwich-row {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px auto; }
 
 @media screen and (min-width: 635px) {
   .btn-sandwich {

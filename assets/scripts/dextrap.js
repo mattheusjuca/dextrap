@@ -1,4 +1,7 @@
 $(function() {
+	$(function() {
+		$(".btn-sandwich").prepend('<div class="btn-sandwich-row"></div><div class="btn-sandwich-row"></div><div class="btn-sandwich-row"></div>');
+	});
 	var navVisible = false;
 	$(".btn-sandwich").click(function(){
 		var $this = $(this);
