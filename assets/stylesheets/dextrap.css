@@ -4,13 +4,18 @@
 * Version 0.0.1
 * github.com/mattheusjuca/dextrap
 */
+.hide {
+  visibility: hidden;
+  display: none; }
+
 * {
   box-sizing: border-box; }
 
 html {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px; }
 
 body {
   margin: 0;
@@ -93,12 +98,12 @@ footer {
 
 .navbar-sandwich > .navbar-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   display: -webkit-flex;
+  align-items: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  -webkit-box-align: center; }
+  -webkit-box-align: center;
+  justify-content: space-between; }
 
 .navbar-brand {
   text-decoration: none;
@@ -118,12 +123,12 @@ footer {
 @media screen and (min-width: 635px) {
   .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     display: -webkit-flex;
+    align-items: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    -webkit-box-align: center; }
+    -webkit-box-align: center;
+    justify-content: space-between; }
 
   .navbar-header {
     display: inline-block; } }

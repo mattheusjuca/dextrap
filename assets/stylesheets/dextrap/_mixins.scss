@@ -1,0 +1,12 @@
+@mixin display-flex() {
+	display: flex;
+	display: -webkit-flex;
+}
+
+@mixin align-items ($value) {
+	align-items: $value;
+
+	-ms-flex-align: $value;
+	-webkit-align-items: $value;
+	-webkit-box-align: $value;
+}
