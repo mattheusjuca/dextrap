@@ -4,7 +4,6 @@
 	margin: 0;
 	overflow: hidden;
 	display: inline-block;
-	background-color: red;
 
 	li {
 		display: inline-block;
@@ -12,8 +11,13 @@
 
 		> a {
 			text-decoration: none;
+			color: black;
 			display: block;
 			padding: $text-link-padding;
+
+			&:hover {
+				color: gray;
+			}
 		}
 	}
 }
