@@ -20,4 +20,18 @@
 			}
 		}
 	}
+
+	.sing-in {
+		@include border-radius(5px);
+
+		border: 1px solid gray;
+		margin: 5px 13px;
+
+		&:hover {
+			background-color: gray;
+			a {
+				color: white;
+			}
+		}
+	}
 }

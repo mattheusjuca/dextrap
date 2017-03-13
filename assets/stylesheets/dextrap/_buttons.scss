@@ -7,7 +7,6 @@
 
 @media screen and (min-width: $screen-tablet) {
 	.btn-sandwich {
-		visibility: hidden;
-    display: none;
+		@include hide;
 	}
 }

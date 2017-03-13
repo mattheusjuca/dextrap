@@ -10,3 +10,16 @@
 	-webkit-align-items: $value;
 	-webkit-box-align: $value;
 }
+
+@mixin hide() {
+	visibility: hidden;
+  display: none;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
