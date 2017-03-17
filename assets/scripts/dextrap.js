@@ -14,4 +14,14 @@ $(function() {
 		$nav.css("display", "block");
 		navVisible = true;
 	});
+	$(window).on('resize', function() {
+		var $nav = $(".navbar-sandwich").find('.nav');
+    if($(this).width() >= 635) {
+      $nav.css("display", "block");
+     	navVisible = true;
+    } else {
+    	$nav.css("display", "none");
+     	navVisible = false;
+    }
+	});
 });

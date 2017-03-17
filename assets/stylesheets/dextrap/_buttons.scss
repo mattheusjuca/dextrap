@@ -1,5 +1,9 @@
+.btn {
+	@include border-radius(5px);
+	border: 1px solid gray;
+}
+
 .btn-sandwich {
-	background-color: transparent;
 	font-size: $font-size-small;
 }
 
@@ -11,10 +15,13 @@
 }
 
 .btn-sing {
-	@include border-radius(5px);
+	@include transition($background-color-transition);
 
-	border: 1px solid gray;
 	margin: 5px 13px;
+
+	a {
+		@include transition($color-transition);
+	}
 
 	&:hover {
 		background-color: gray;

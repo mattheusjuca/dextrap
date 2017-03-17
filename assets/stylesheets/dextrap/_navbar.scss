@@ -35,6 +35,10 @@
 	}
 }
 
+.navbar-primary {
+	background-color: $primary-blue;
+}
+
 @media screen and (max-width: $screen-tablet) {
 	.navbar-sandwich {
 		> .nav {

@@ -1,3 +1,5 @@
+// Typography
+
 $font-stack: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $font-size-default: 16px;
@@ -6,14 +8,32 @@ $font-size-big: 22px;
 
 $font-size-small: 14px;
 
+// Colors
+
+$primary-blue: #10428B;
+
+// Devices
+
 $screen-tablet: 635px; // (768px ?)
 
-$link-padding: 8px;
-
-$bottom-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 8px 0 rgba(0, 0, 0, 0.19);
+// Buttons
 
 $btn-sandwich-width: 35px;
 
 $btn-sandwich-row-height: 5px;
 
 $btn-snadwich-row-margin: 6px auto;
+
+// Padding
+
+$link-padding: 8px;
+
+// Box-shadow
+
+$bottom-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 0 15px 0 rgba(0, 0, 0, 0.19);
+
+// Transitions
+
+$background-color-transition: background-color .6s ease;
+
+$color-transition: color .15s ease;
