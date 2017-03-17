@@ -13,24 +13,10 @@
 			text-decoration: none;
 			color: black;
 			display: block;
-			padding: $text-link-padding;
+			padding: $link-padding;
 
 			&:hover {
 				color: gray;
-			}
-		}
-	}
-
-	.sing-in {
-		@include border-radius(5px);
-
-		border: 1px solid gray;
-		margin: 5px 13px;
-
-		&:hover {
-			background-color: gray;
-			a {
-				color: white;
 			}
 		}
 	}

@@ -86,17 +86,6 @@ footer {
       padding: 8px; }
       .nav li > a:hover {
         color: gray; }
-  .nav .sing-in {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border: 1px solid gray;
-    margin: 5px 13px; }
-    .nav .sing-in:hover {
-      background-color: gray; }
-      .nav .sing-in:hover a {
-        color: white; }
 
 .navbar {
   position: relative;
@@ -154,11 +143,27 @@ footer {
 
   .navbar-header {
     display: inline-block; } }
+.btn-sandwich {
+  background-color: transparent;
+  font-size: 14px; }
+
 .btn-sandwich-row {
   width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px auto; }
+
+.btn-sing {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border: 1px solid gray;
+  margin: 5px 13px; }
+  .btn-sing:hover {
+    background-color: gray; }
+    .btn-sing:hover a {
+      color: white !important; }
 
 @media screen and (min-width: 635px) {
   .btn-sandwich {

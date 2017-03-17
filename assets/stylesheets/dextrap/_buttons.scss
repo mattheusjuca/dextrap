@@ -1,8 +1,27 @@
+.btn-sandwich {
+	background-color: transparent;
+	font-size: $font-size-small;
+}
+
 .btn-sandwich-row {
 	width: $btn-sandwich-width;
   height: $btn-sandwich-row-height;
   background-color: black;
   margin: $btn-snadwich-row-margin;
+}
+
+.btn-sing {
+	@include border-radius(5px);
+
+	border: 1px solid gray;
+	margin: 5px 13px;
+
+	&:hover {
+		background-color: gray;
+		a {
+			color: white !important;
+		}
+	}
 }
 
 @media screen and (min-width: $screen-tablet) {
