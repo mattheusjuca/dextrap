@@ -31,12 +31,32 @@
 	}
 
 	&:hover {
-		color: gray;
+		color: $default-gray;
 	}
 }
 
 .navbar-primary {
 	background-color: $primary-blue;
+
+	> .nav {
+		@extend .nav-primary;
+	}
+
+	.navbar-brand {
+		color: $primary-gray;
+
+		&:hover {
+			color: white;
+		}
+	}
+
+	.btn {
+		border-color: $primary-gray;
+	}
+
+	.btn-sandwich-row {
+		background-color: $primary-gray;
+	}
 }
 
 @media screen and (max-width: $screen-tablet) {
@@ -48,11 +68,27 @@
 			> li {
 				@include border-radius(5px);
 
-				border: 1px solid gray;
+				border: 1px solid black;
 				margin: 5px 13px;
     		display: block;
+
+    		&:hover {
+    			border-color: $default-gray;
+    		}
     	}
     }
+	}
+
+	.navbar-primary {
+		> .nav {
+			> li {
+				border-color: $primary-gray;
+
+				&:hover {
+					border-color: white;
+				}
+			}
+		}
 	}
 }
 

@@ -86,7 +86,12 @@ footer {
       display: block;
       padding: 8px; }
       .nav li > a:hover {
-        color: gray; }
+        color: #808080; }
+
+.nav-primary li > a, .navbar-primary > .nav li > a {
+  color: #ddd; }
+  .nav-primary li > a:hover, .navbar-primary > .nav li > a:hover {
+    color: white; }
 
 .navbar {
   position: relative;
@@ -116,10 +121,18 @@ footer {
   .navbar-brand > img {
     vertical-align: middle; }
   .navbar-brand:hover {
-    color: gray; }
+    color: #808080; }
 
 .navbar-primary {
   background-color: #10428B; }
+  .navbar-primary .navbar-brand {
+    color: #ddd; }
+    .navbar-primary .navbar-brand:hover {
+      color: white; }
+  .navbar-primary .btn {
+    border-color: #ddd; }
+  .navbar-primary .btn-sandwich-row {
+    background-color: #ddd; }
 
 @media screen and (max-width: 635px) {
   .navbar-sandwich > .nav {
@@ -130,9 +143,16 @@ footer {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
-      border: 1px solid gray;
+      border: 1px solid black;
       margin: 5px 13px;
-      display: block; } }
+      display: block; }
+      .navbar-sandwich > .nav > li:hover {
+        border-color: #808080; }
+
+  .navbar-primary > .nav > li {
+    border-color: #ddd; }
+    .navbar-primary > .nav > li:hover {
+      border-color: white; } }
 @media screen and (min-width: 635px) {
   .navbar {
     display: flex;
@@ -152,7 +172,7 @@ footer {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  border: 1px solid gray; }
+  border: 1px solid #808080; }
 
 .btn-sandwich {
   font-size: 14px; }
@@ -173,7 +193,7 @@ footer {
     -webkit-transition: color 0.15s ease;
     -moz-transition: color 0.15s ease; }
   .btn-sing:hover {
-    background-color: gray; }
+    background-color: #808080; }
     .btn-sing:hover a {
       color: white !important; }
 
