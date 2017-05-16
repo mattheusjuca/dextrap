@@ -9,15 +9,15 @@
 
 .btn-sandwich-row {
 	width: $btn-sandwich-width;
-  height: $btn-sandwich-row-height;
-  background-color: black;
-  margin: $btn-snadwich-row-margin;
+	height: $btn-sandwich-row-height;
+	background-color: black;
+	margin: $btn-sandwich-row-margin;
 }
 
 .btn-sing {
 	@include transition($background-color-transition);
 
-	margin: 5px 13px;
+	margin: $btn-margin-default;
 
 	a {
 		@include transition($color-transition);

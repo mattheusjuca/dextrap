@@ -4,10 +4,6 @@
 * Version 0.0.1
 * github.com/mattheusjuca/dextrap
 */
-.hide {
-  visibility: hidden;
-  display: none; }
-
 * {
   box-sizing: border-box; }
 
@@ -124,7 +120,7 @@ footer {
     color: #808080; }
 
 .navbar-primary {
-  background-color: #10428B; }
+  background-color: #0A2A58; }
   .navbar-primary .navbar-brand {
     color: #ddd; }
     .navbar-primary .navbar-brand:hover {

@@ -36,7 +36,7 @@
 }
 
 .navbar-primary {
-	background-color: $primary-blue;
+	background-color: $dark-blue;
 
 	> .nav {
 		@extend .nav-primary;
@@ -63,20 +63,20 @@
 	.navbar-sandwich {
 		> .nav {
 			width: 100%;
-    	display: none;
+    		display: none;
 
 			> li {
 				@include border-radius(5px);
 
 				border: 1px solid black;
-				margin: 5px 13px;
-    		display: block;
+				margin: $btn-margin-default;
+    			display: block;
 
-    		&:hover {
-    			border-color: $default-gray;
+    			&:hover {
+    				border-color: $default-gray;
+    			}
     		}
     	}
-    }
 	}
 
 	.navbar-primary {
@@ -102,10 +102,9 @@
 		> .nav {
 			margin-left: auto;
 		}
-  }
+  	}
 
-  .navbar-header {
-  	display: inline-block;
-  }
-
+	.navbar-header {
+  		display: inline-block;
+  	}
 }

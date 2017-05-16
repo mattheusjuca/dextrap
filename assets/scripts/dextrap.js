@@ -1,7 +1,9 @@
 $(function() {
 	$(function() {
-		$(".btn-sandwich").prepend('<div class="btn-sandwich-row"></div><div class="btn-sandwich-row"></div><div class="btn-sandwich-row"></div>');
+		var sandwichSymbol = '<div class="btn-sandwich-row"></div><div class="btn-sandwich-row"></div><div class="btn-sandwich-row"></div>';
+		$(".btn-sandwich").prepend(sandwichSymbol);
 	});
+
 	var navVisible = false;
 	$(".btn-sandwich").click(function(){
 		var $this = $(this);
