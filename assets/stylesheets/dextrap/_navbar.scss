@@ -57,6 +57,15 @@
 	.btn-sandwich-row {
 		background-color: $primary-gray;
 	}
+
+	.btn-sing {
+		&:hover {
+			background-color: white;
+			a {
+				color: $default-gray !important;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: $screen-tablet) {

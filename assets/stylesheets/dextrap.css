@@ -129,6 +129,10 @@ footer {
     border-color: #ddd; }
   .navbar-primary .btn-sandwich-row {
     background-color: #ddd; }
+  .navbar-primary .btn-sing:hover {
+    background-color: white; }
+    .navbar-primary .btn-sing:hover a {
+      color: #808080 !important; }
 
 @media screen and (max-width: 635px) {
   .navbar-sandwich > .nav {
