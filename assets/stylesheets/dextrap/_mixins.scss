@@ -29,3 +29,53 @@
   -webkit-transition: $effect;
 	-moz-transition: $effect;
 }
+
+@mixin colorAndHoverText ($color, $hoverColor) {
+	color: $color;
+
+	&:hover {
+		color: $hoverColor;
+	}
+}
+
+@mixin styleNavbar($background-color, $inverseBackground-color, $color, $hoverColor, $inverseColor, $border-color, $hoverBorder-color) {
+	background-color: $background-color;
+
+	.navbar-brand {
+		@include colorAndHoverText ($color, $hoverColor);
+	}
+
+	.btn {
+		border-color: $border-color;
+	}
+
+	.btn-sandwich {
+		color: $color;
+	}
+
+	.btn-sandwich-row {
+		background-color: $color;
+	}
+
+	.btn-sing {
+		&:hover {
+			background-color: $inverseBackground-color;
+			a {
+				color: $inverseColor !important;
+			}
+		}
+	}
+
+	@media screen and (max-width: $screen-tablet) {
+		> .nav {
+			> li {
+				border-color: $border-color !important;
+
+				&:hover {
+					border-color: $hoverBorder-color !important;
+				}
+			}
+		}
+	}
+
+}

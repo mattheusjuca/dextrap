@@ -20,8 +20,9 @@
 }
 
 .navbar-brand {
+	@include colorAndHoverText (black, $default-gray);
+
 	text-decoration: none;
-	color: black;
 	font-size: $font-size-big;
 	font-weight: bold;
 	padding: $link-padding;
@@ -29,42 +30,21 @@
 	> img {
 		vertical-align: middle;
 	}
-
-	&:hover {
-		color: $default-gray;
-	}
 }
 
 .navbar-primary {
-	background-color: $dark-blue;
+	@include styleNavbar($dark-blue, white, $primary-gray, white, $default-gray, $primary-gray, white);
 
 	> .nav {
 		@extend .nav-primary;
 	}
+}
 
-	.navbar-brand {
-		color: $primary-gray;
-
-		&:hover {
-			color: white;
-		}
-	}
-
-	.btn {
-		border-color: $primary-gray;
-	}
-
-	.btn-sandwich-row {
-		background-color: $primary-gray;
-	}
-
-	.btn-sing {
-		&:hover {
-			background-color: white;
-			a {
-				color: $default-gray !important;
-			}
-		}
+.navbar-complementary {
+	@include styleNavbar($complementary-yellow, $primary-blue, $compound-complementary-yellow, $primary-blue, $compound-complementary-yellow, $compound-complementary-yellow, #10428B);
+	
+	> .nav {
+		@extend .nav-complementary;
 	}
 }
 
@@ -86,18 +66,6 @@
     			}
     		}
     	}
-	}
-
-	.navbar-primary {
-		> .nav {
-			> li {
-				border-color: $primary-gray;
-
-				&:hover {
-					border-color: white;
-				}
-			}
-		}
 	}
 }
 
