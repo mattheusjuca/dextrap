@@ -1,11 +1,27 @@
 .btn {
 	@include border-radius(5px);
+	color: black;
+	padding: $padding-medium;
 	border: 1px solid $default-gray;
+
+	&:hover {
+		background-color: $default-gray;
+		color: white;
+	}
+}
+
+.btn-primary {
+	background-color: $primary-blue;
+	border-color: $dark-blue;
+	color: white;
+
+	&:hover {
+		background-color: $dark-blue;
+		color: $primary-gray;
+	}
 }
 
 .btn-sandwich {
-	color: black;
-
 	font-size: $font-size-small;
 }
 
@@ -20,9 +36,11 @@
 	@include transition($background-color-transition);
 
 	margin: $btn-margin-default;
+	text-align: center;
 
 	a {
 		@include transition($color-transition);
+		padding: 0 !important;
 	}
 
 	&:hover {

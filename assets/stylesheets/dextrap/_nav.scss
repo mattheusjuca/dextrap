@@ -7,12 +7,11 @@
 
 	li {
 		display: inline-block;
-		padding-right: 1px;
 
 		> a {
 			text-decoration: none;
 			display: block;
-			padding: $link-padding;
+			padding: $padding-medium;
 
 			@include colorAndHoverText (black, $default-gray);
 		}
