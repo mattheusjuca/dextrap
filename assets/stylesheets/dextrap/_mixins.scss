@@ -50,11 +50,66 @@
 	}
 }
 
-@mixin styleNavbar($background-color, $color, $hoverColor) {
-	background-color: $background-color;
+@mixin styleSandwichButton($color) {
+	color: $color;
+	border-color: $color;
 
-	.navbar-brand {
+	.btn-sandwich-row {
+		background-color: $color;
+	}
+}
+
+@mixin styleNav($color, $hoverColor) {
+	li {
+		color: $color;
+		border-color: $color;
+
+		&:hover {
+   			border-color: $hoverColor;
+   		}
+
+		> a {
+			@include colorAndHoverText ($color, $hoverColor);
+
+			text-decoration: none;
+		}
+	}
+}
+
+@mixin styleDiv($background-color, $color, $hoverColor) {
+	background-color: $background-color;
+	color: $color;
+
+	a {
 		@include colorAndHoverText ($color, $hoverColor);
+		text-decoration: none;
+	}
+}
+
+@mixin primaryDiv($background-color, $color, $hoverColor) {
+	@include styleDiv($background-color, $color, $hoverColor);
+
+	.nav {
+		@extend .nav-primary;
 	}
 
+	.btn {
+		@extend .btn-primary;
+	}
+
+	.btn-sandwich {
+		@extend .btn-sandwich-primary;
+	}
+}
+
+@mixin complementaryDiv($background-color, $color, $hoverColor) {
+	@include styleDiv($background-color, $color, $hoverColor);
+
+	.nav {
+		@extend .nav-complementary;
+	}
+
+	.btn-sandwich {
+		@extend .btn-sandwich-complementary;
+	}
 }

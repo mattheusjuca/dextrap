@@ -12,8 +12,11 @@
 }
 
 .btn-sandwich {
+	@include styleSandwichButton(black);
 	@include border-radius(5px);
-	border: solid 1px $default-gray;
+
+	border-style: solid;
+	border-width: 1px;
 	font-size: $font-size-small;
 }
 
@@ -25,25 +28,9 @@
 }
 
 .btn-sandwich-primary {
-	color: $primary-gray;
-	border-color: $primary-gray;
-
-	.btn-sandwich-row {
-		background-color: $primary-gray;
-	}
+	@include styleSandwichButton($primary-gray);
 }
 
 .btn-sandwich-complementary {
-	color: $compound-complementary-yellow;
-	border-color: $compound-complementary-yellow;
-
-	.btn-sandwich-row {
-		background-color: $compound-complementary-yellow;
-	}
-}
-
-@media screen and (min-width: $screen-tablet) {
-	.btn-sandwich {
-		@include hide;
-	}
+	@include styleSandwichButton($compound-complementary-yellow);
 }
