@@ -3,7 +3,7 @@
 	display: -webkit-flex;
 }
 
-@mixin align-items ($value) {
+@mixin align-items($value) {
 	align-items: $value;
 
 	-ms-flex-align: $value;
@@ -24,13 +24,13 @@
   -ms-border-radius: $radius;
 }
 
-@mixin transition ($effect) {
+@mixin transition($effect) {
   transition: $effect;
   -webkit-transition: $effect;
 	-moz-transition: $effect;
 }
 
-@mixin colorAndHoverText ($color, $hoverColor) {
+@mixin colorAndHoverText($color, $hoverColor) {
 	color: $color;
 
 	&:hover {
@@ -38,44 +38,23 @@
 	}
 }
 
-@mixin styleNavbar($background-color, $inverseBackground-color, $color, $hoverColor, $inverseColor, $border-color, $hoverBorder-color) {
+@mixin styleButton($background-color, $border-color, $color, $hoverBackground-color, $hoverBorder-color, $hoverColor) {
+	background-color: $background-color;
+	border-color: $border-color;
+	color: $color;
+
+	&:hover {
+		background-color: $hoverBackground-color;
+		border-color: $hoverBorder-color;
+		color: $hoverColor;
+	}
+}
+
+@mixin styleNavbar($background-color, $color, $hoverColor) {
 	background-color: $background-color;
 
 	.navbar-brand {
 		@include colorAndHoverText ($color, $hoverColor);
-	}
-
-	.btn {
-		border-color: $border-color;
-	}
-
-	.btn-sandwich {
-		color: $color;
-	}
-
-	.btn-sandwich-row {
-		background-color: $color;
-	}
-
-	.btn-sing {
-		&:hover {
-			background-color: $inverseBackground-color;
-			a {
-				color: $inverseColor !important;
-			}
-		}
-	}
-
-	@media screen and (max-width: $screen-tablet) {
-		> .nav {
-			> li {
-				border-color: $border-color !important;
-
-				&:hover {
-					border-color: $hoverBorder-color !important;
-				}
-			}
-		}
 	}
 
 }

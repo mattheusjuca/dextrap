@@ -1,0 +1,13 @@
+.bordered {
+	@include border-radius(5px);
+    //@include transition($background-color-transition);
+    //@include transition($color-transition);
+
+	border: solid 1px black;
+
+	&:hover {
+        border-color: $default-gray;    
+	//	background-color: $default-gray;
+	//	color: white !important;
+	}
+}

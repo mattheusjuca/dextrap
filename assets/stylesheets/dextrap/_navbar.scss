@@ -7,7 +7,7 @@
 }
 
 .navbar-header {
-	padding: 5px;
+	padding: $clear-area-small;
 }
 
 .navbar-sandwich {
@@ -25,7 +25,7 @@
 	text-decoration: none;
 	font-size: $font-size-big;
 	font-weight: bold;
-	padding: $padding-medium;
+	padding: $clear-area-medium;
 
 	> img {
 		vertical-align: middle;
@@ -33,18 +33,30 @@
 }
 
 .navbar-primary {
-	@include styleNavbar($dark-blue, white, $primary-gray, white, $default-gray, $primary-gray, white);
+	@include styleNavbar($dark-blue, $primary-gray, white);
 
-	> .nav {
+	.nav {
 		@extend .nav-primary;
+	}
+
+	.btn {
+		@extend .btn-primary;
+	}
+
+	.btn-sandwich {
+		@extend .btn-sandwich-primary;
 	}
 }
 
 .navbar-complementary {
-	@include styleNavbar($complementary-yellow, $primary-blue, $compound-complementary-yellow, $primary-blue, $compound-complementary-yellow, $compound-complementary-yellow, #10428B);
+	@include styleNavbar($complementary-yellow, $compound-complementary-yellow, $primary-blue);
 	
-	> .nav {
+	.nav {
 		@extend .nav-complementary;
+	}
+
+	.btn-sandwich {
+		@extend .btn-sandwich-complementary;
 	}
 }
 
@@ -57,13 +69,10 @@
 			> li {
 				@include border-radius(5px);
 
-				border: 1px solid black;
-				margin: $btn-margin-default;
+				border-style: solid;
+				border-width: 1px;
+				margin: $clear-area-small $clear-area-big;
     			display: block;
-
-    			&:hover {
-    				border-color: $default-gray;
-    			}
     		}
     	}
 	}

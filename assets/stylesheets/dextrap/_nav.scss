@@ -7,19 +7,30 @@
 
 	li {
 		display: inline-block;
+		border-color: black;
+
+		&:hover {
+			border-color: $default-gray;
+		}
 
 		> a {
+			@include colorAndHoverText (black, $default-gray);
+
 			text-decoration: none;
 			display: block;
-			padding: $padding-medium;
-
-			@include colorAndHoverText (black, $default-gray);
+			padding: $clear-area-medium;
 		}
 	}
 }
 
 .nav-primary {
 	li {
+		border-color: $primary-gray;
+
+		&:hover {
+   			border-color: white;
+   		}
+
 		> a {
 			@include colorAndHoverText ($primary-gray, white);
 		}
@@ -28,6 +39,12 @@
 
 .nav-complementary {
 	li {
+		border-color: $compound-complementary-yellow;
+		
+		&:hover {
+   			border-color: $primary-blue;
+   		}
+		
 		> a {
 			@include colorAndHoverText ($compound-complementary-yellow, $primary-blue);
 		}
