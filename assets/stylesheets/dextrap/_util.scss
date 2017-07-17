@@ -1,13 +1,14 @@
-.bordered {
+.sing {
 	@include border-radius(5px);
-    //@include transition($background-color-transition);
-    //@include transition($color-transition);
+    @include transition($background-color-transition);
 
 	border: solid 1px black;
 
-	&:hover {
-        border-color: $default-gray;    
-	//	background-color: $default-gray;
-	//	color: white !important;
+	&:hover {    
+		background-color: $default-gray;
+		color: white !important;
+		a {
+			color: white !important;
+		}
 	}
 }

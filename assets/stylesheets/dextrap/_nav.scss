@@ -15,6 +15,14 @@
 			padding: $clear-area-medium;
 		}
 	}
+
+	.sing {
+		@include border-radius(5px);
+    	@include transition($background-color-transition);
+
+		border: solid 1px;
+	}
+
 }
 
 .nav-primary {

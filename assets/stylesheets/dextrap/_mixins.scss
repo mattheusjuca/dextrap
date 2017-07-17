@@ -13,21 +13,21 @@
 
 @mixin hide() {
 	visibility: hidden;
-  display: none;
+	display: none;
 }
 
 @mixin border-radius($radius) {
 	border-radius: $radius;
 	
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
 }
 
 @mixin transition($effect) {
   transition: $effect;
   -webkit-transition: $effect;
-	-moz-transition: $effect;
+  -moz-transition: $effect;
 }
 
 @mixin colorAndHoverText($color, $hoverColor) {
@@ -61,7 +61,7 @@
 
 @mixin styleNav($color, $hoverColor) {
 	li {
-		color: $color;
+		@include colorAndHoverText ($color, $hoverColor);
 		border-color: $color;
 
 		&:hover {
@@ -74,6 +74,20 @@
 			text-decoration: none;
 		}
 	}
+
+	.sing {
+		border-color: $color;
+
+		&:hover {    
+			background-color: $hoverColor;
+			color: (#FFFFFF - $color) !important;
+
+			a {
+				color: (#FFFFFF - $color) !important;
+			}
+		}
+	}
+
 }
 
 @mixin styleDiv($background-color, $color, $hoverColor) {
