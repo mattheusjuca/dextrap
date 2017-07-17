@@ -123,6 +123,10 @@
 		@extend .nav-complementary;
 	}
 
+	.btn {
+		@extend .btn-complementary;
+	}
+
 	.btn-sandwich {
 		@extend .btn-sandwich-complementary;
 	}

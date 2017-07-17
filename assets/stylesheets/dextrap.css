@@ -4,21 +4,6 @@
 * Version 0.0.1
 * github.com/mattheusjuca/dextrap
 */
-.sing {
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  transition: background-color 0.6s ease;
-  -webkit-transition: background-color 0.6s ease;
-  -moz-transition: background-color 0.6s ease;
-  border: solid 1px black; }
-  .sing:hover {
-    background-color: #808080;
-    color: white !important; }
-    .sing:hover a {
-      color: white !important; }
-
 * {
   box-sizing: border-box; }
 
@@ -260,15 +245,6 @@ footer {
     border-color: black;
     color: white; }
 
-.btn-primary, .navbar-primary .btn {
-  background-color: #10428B;
-  border-color: #0A2A58;
-  color: white; }
-  .btn-primary:hover, .navbar-primary .btn:hover {
-    background-color: #0A2A58;
-    border-color: #10428B;
-    color: #ddd; }
-
 .btn-sandwich {
   color: black;
   border-color: black;
@@ -288,11 +264,29 @@ footer {
   background-color: black;
   margin: 6px auto; }
 
+.btn-primary, .navbar-primary .btn {
+  background-color: #10428B;
+  border-color: #0A2A58;
+  color: white; }
+  .btn-primary:hover, .navbar-primary .btn:hover {
+    background-color: #0A2A58;
+    border-color: #10428B;
+    color: #ddd; }
+
 .btn-sandwich-primary, .navbar-primary .btn-sandwich {
   color: #ddd;
   border-color: #ddd; }
   .btn-sandwich-primary .btn-sandwich-row, .navbar-primary .btn-sandwich .btn-sandwich-row {
     background-color: #ddd; }
+
+.btn-complementary, .navbar-complementary .btn {
+  background-color: #3E2900;
+  border-color: white;
+  color: white; }
+  .btn-complementary:hover, .navbar-complementary .btn:hover {
+    background-color: #8B6210;
+    border-color: white;
+    color: #F1E27C; }
 
 .btn-sandwich-complementary, .navbar-complementary .btn-sandwich {
   color: #F1E27C;
