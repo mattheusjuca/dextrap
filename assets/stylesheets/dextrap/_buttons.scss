@@ -38,3 +38,15 @@
 .btn-sandwich-complementary {
 	@include styleSandwichButton($compound-complementary-yellow);
 }
+
+.btn-success {
+	@include styleButton ($triad-light-green, $default-gray, black, $triad-green, $default-gray, $primary-gray);
+}
+
+.btn-danger {
+	@include styleButton ($compound-red, $default-gray, black, $triad-red, $default-gray, $primary-gray);
+}
+
+.btn-info {
+	@include styleButton ($compound-complementary-yellow, $default-gray, black, $complementary-yellow, $default-gray, $primary-gray);
+}

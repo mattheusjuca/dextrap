@@ -294,4 +294,31 @@ footer {
   .btn-sandwich-complementary .btn-sandwich-row, .navbar-complementary .btn-sandwich .btn-sandwich-row {
     background-color: #F1E27C; }
 
+.btn-success {
+  background-color: #A9D70E;
+  border-color: #808080;
+  color: black; }
+  .btn-success:hover {
+    background-color: #445801;
+    border-color: #808080;
+    color: #ddd; }
+
+.btn-danger {
+  background-color: #BE4F03;
+  border-color: #808080;
+  color: black; }
+  .btn-danger:hover {
+    background-color: #982E21;
+    border-color: #808080;
+    color: #ddd; }
+
+.btn-info {
+  background-color: #F1E27C;
+  border-color: #808080;
+  color: black; }
+  .btn-info:hover {
+    background-color: #8B6210;
+    border-color: #808080;
+    color: #ddd; }
+
 /*# sourceMappingURL=dextrap.css.map */
