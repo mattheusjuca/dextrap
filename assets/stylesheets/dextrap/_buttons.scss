@@ -23,6 +23,18 @@
 	margin: $btn-sandwich-row-margin;
 }
 
+.btn-success {
+	@include styleButton ($triad-light-green !important, $default-gray !important, black !important, $triad-green !important, $default-gray !important, $primary-gray !important);
+}
+
+.btn-danger {
+	@include styleButton ($compound-red !important, $default-gray !important, black !important, $triad-red !important, $default-gray !important, $primary-gray !important);
+}
+
+.btn-info {
+	@include styleButton ($compound-complementary-yellow !important, $default-gray !important, black !important, $complementary-yellow !important, $default-gray !important, $primary-gray !important);
+}
+
 .btn-primary {
 	@include styleButton ($primary-blue, $dark-blue, white, $dark-blue, $primary-blue, $primary-gray);
 }
@@ -37,16 +49,4 @@
 
 .btn-sandwich-complementary {
 	@include styleSandwichButton($compound-complementary-yellow);
-}
-
-.btn-success {
-	@include styleButton ($triad-light-green, $default-gray, black, $triad-green, $default-gray, $primary-gray);
-}
-
-.btn-danger {
-	@include styleButton ($compound-red, $default-gray, black, $triad-red, $default-gray, $primary-gray);
-}
-
-.btn-info {
-	@include styleButton ($compound-complementary-yellow, $default-gray, black, $complementary-yellow, $default-gray, $primary-gray);
 }

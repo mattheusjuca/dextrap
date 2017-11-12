@@ -286,6 +286,33 @@ footer {
   background-color: black;
   margin: 6px auto; }
 
+.btn-success {
+  background-color: #A9D70E !important;
+  border-color: #808080 !important;
+  color: black !important; }
+  .btn-success:hover {
+    background-color: #445801 !important;
+    border-color: #808080 !important;
+    color: #ddd !important; }
+
+.btn-danger {
+  background-color: #BE4F03 !important;
+  border-color: #808080 !important;
+  color: black !important; }
+  .btn-danger:hover {
+    background-color: #982E21 !important;
+    border-color: #808080 !important;
+    color: #ddd !important; }
+
+.btn-info {
+  background-color: #F1E27C !important;
+  border-color: #808080 !important;
+  color: black !important; }
+  .btn-info:hover {
+    background-color: #8B6210 !important;
+    border-color: #808080 !important;
+    color: #ddd !important; }
+
 .btn-primary, .footer-primary .btn, .navbar-primary .btn {
   background-color: #10428B;
   border-color: #0A2A58;
@@ -315,32 +342,5 @@ footer {
   border-color: #F1E27C; }
   .btn-sandwich-complementary .btn-sandwich-row, .footer-complementary .btn-sandwich .btn-sandwich-row, .navbar-complementary .btn-sandwich .btn-sandwich-row {
     background-color: #F1E27C; }
-
-.btn-success {
-  background-color: #A9D70E;
-  border-color: #808080;
-  color: black; }
-  .btn-success:hover {
-    background-color: #445801;
-    border-color: #808080;
-    color: #ddd; }
-
-.btn-danger {
-  background-color: #BE4F03;
-  border-color: #808080;
-  color: black; }
-  .btn-danger:hover {
-    background-color: red;
-    border-color: #808080;
-    color: #ddd; }
-
-.btn-info {
-  background-color: #F1E27C;
-  border-color: #808080;
-  color: black; }
-  .btn-info:hover {
-    background-color: #8B6210;
-    border-color: #808080;
-    color: #ddd; }
 
 /*# sourceMappingURL=dextrap.css.map */
