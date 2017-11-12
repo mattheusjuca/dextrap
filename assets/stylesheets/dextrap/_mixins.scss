@@ -3,6 +3,13 @@
 	display: -webkit-flex;
 }
 
+@mixin typography($font-stack, $font-size) {
+  font-family: $font-stack;
+	-ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: $font-size;
+}
+
 @mixin align-items($value) {
 	align-items: $value;
 

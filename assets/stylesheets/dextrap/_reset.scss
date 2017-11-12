@@ -3,10 +3,7 @@
 }
 
 html {
-	font-family: $font-stack;
-	-ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font-size: $font-size-default;
+	@include typography($font-stack, $font-size-default);
 }
 
 body {
