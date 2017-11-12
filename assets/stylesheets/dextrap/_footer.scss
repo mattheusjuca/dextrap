@@ -1,4 +1,13 @@
 footer {
+  @include align-items (center);
 	clear: both;
-	text-align: center;
+  text-align: center;
+}
+
+.footer-primary {
+	@include primaryDiv($dark-blue, $primary-gray, white);
+}
+
+.footer-complementary {
+	@include complementaryDiv($complementary-yellow, $compound-complementary-yellow, $primary-blue);
 }

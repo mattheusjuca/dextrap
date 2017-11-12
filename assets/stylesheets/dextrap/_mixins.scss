@@ -80,10 +80,9 @@
 
 		&:hover {    
 			background-color: $hoverColor;
-			color: (#FFFFFF - $color) !important;
-
+			color: complement($color) !important;
 			a {
-				color: (#FFFFFF - $color) !important;
+				color:  complement($color) !important;
 			}
 		}
 	}
