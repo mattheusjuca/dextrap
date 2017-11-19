@@ -287,7 +287,8 @@ footer {
 .dropdown:hover .dropdown-content {
   display: block; }
 
-.btn {
+.btn, input[type=reset],
+input[type=submit] {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -298,7 +299,8 @@ footer {
   padding: 8px;
   border-style: solid;
   border-width: 1px; }
-  .btn:hover {
+  .btn:hover, input[type=reset]:hover,
+  input[type=submit]:hover {
     background-color: #808080;
     border-color: black;
     color: white; }
@@ -349,11 +351,15 @@ footer {
     border-color: #808080 !important;
     color: #ddd !important; }
 
-.btn-primary, .footer-primary .btn, .navbar-primary .btn {
+.btn-primary, .footer-primary .btn, .footer-primary input[type=reset],
+.footer-primary input[type=submit], .navbar-primary .btn, .navbar-primary input[type=reset],
+.navbar-primary input[type=submit] {
   background-color: #10428B;
   border-color: #0A2A58;
   color: white; }
-  .btn-primary:hover, .footer-primary .btn:hover, .navbar-primary .btn:hover {
+  .btn-primary:hover, .footer-primary .btn:hover, .footer-primary input[type=reset]:hover,
+  .footer-primary input[type=submit]:hover, .navbar-primary .btn:hover, .navbar-primary input[type=reset]:hover,
+  .navbar-primary input[type=submit]:hover {
     background-color: #0A2A58;
     border-color: #10428B;
     color: #ddd; }
@@ -364,11 +370,15 @@ footer {
   .btn-sandwich-primary .btn-sandwich-row, .footer-primary .btn-sandwich .btn-sandwich-row, .navbar-primary .btn-sandwich .btn-sandwich-row {
     background-color: #ddd; }
 
-.btn-complementary, .footer-complementary .btn, .navbar-complementary .btn {
+.btn-complementary, .footer-complementary .btn, .footer-complementary input[type=reset],
+.footer-complementary input[type=submit], .navbar-complementary .btn, .navbar-complementary input[type=reset],
+.navbar-complementary input[type=submit] {
   background-color: #3E2900;
   border-color: white;
   color: white; }
-  .btn-complementary:hover, .footer-complementary .btn:hover, .navbar-complementary .btn:hover {
+  .btn-complementary:hover, .footer-complementary .btn:hover, .footer-complementary input[type=reset]:hover,
+  .footer-complementary input[type=submit]:hover, .navbar-complementary .btn:hover, .navbar-complementary input[type=reset]:hover,
+  .navbar-complementary input[type=submit]:hover {
     background-color: #8B6210;
     border-color: white;
     color: #F1E27C; }
@@ -378,5 +388,26 @@ footer {
   border-color: #F1E27C; }
   .btn-sandwich-complementary .btn-sandwich-row, .footer-complementary .btn-sandwich .btn-sandwich-row, .navbar-complementary .btn-sandwich .btn-sandwich-row {
     background-color: #F1E27C; }
+
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=number],
+input[type=url],
+input[type=week],
+select {
+  width: 250px;
+  height: 30px;
+  padding: 6px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 5px; }
+
+select {
+  color: #999; }
 
 /*# sourceMappingURL=dextrap.css.map */
