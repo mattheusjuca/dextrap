@@ -2,7 +2,7 @@
 	@include styleNav(black, $default-gray);
 
 	list-style-type: none;
-	padding: 0;
+	padding: 0 $clear-area-small;
 	margin: 0;
 	overflow: hidden;
 	display: inline-block;
@@ -18,11 +18,18 @@
 
 	.sing {
 		@include border-radius(5px);
-    	@include transition($background-color-transition);
+    @include transition($background-color-transition);
 
 		border: solid 1px;
 	}
 
+}
+
+.nav-vertical {
+  display: initial;
+  li {
+    display: initial;
+  }
 }
 
 .nav-primary {
